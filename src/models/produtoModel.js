@@ -24,7 +24,6 @@ const editarProduto = async (id,produto) => {
     return produt;
 }
 
-
 const deletarProduto = async (id) => {
     const mensagem = "Produto com ID: "+id+" foi excluido com sucesso!";
     const produto = await conexao.execute ('DELETE FROM produto where id_produto = ?', [id]);
